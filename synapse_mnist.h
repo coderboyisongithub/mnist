@@ -27,7 +27,7 @@ class synapse_mnist
 	int lable_magic_number, total_lables;
 
 
-	int big2little(int big)
+	static int big2little(int big)
 	{
 		int little = (big & 0xFF000000) >> 24;
 		little = (big & 0x00FF0000) >> 8 | little;
